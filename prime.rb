@@ -5,7 +5,7 @@ def prime?(num)
     return false
   else
   for y in 2..(x-1)
-    if (x % y) == 0
+    if (num % y) == 0
       return false 
     end
   end 
