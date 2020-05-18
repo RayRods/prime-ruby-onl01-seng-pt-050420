@@ -1,15 +1,8 @@
 def prime?(num)
- if num == 1
-    return true 
-  elsif num < 1
-    return false
-  else
-  for y in 2..(num-1)
-    if (num % y) == 0
-      return false 
+    i = 2
+    while i < num
+        return false if num % i == 0 && num< 1
+        i += 1
     end
-  end 
-end
-
-
+    true
 end
